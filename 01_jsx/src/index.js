@@ -1,17 +1,39 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+//  Before creating App.js file 
+// // 1) Import the React and ReactDOM libraries
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// // 2) Get a reference to the div with ID root(i.e - root element which is present in index.html)
+// const el = document.getElementById('root');
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// // 3) Tell React to take control of the element
+// const root = ReactDOM.createRoot(el);
+
+// // 4) Create a component (Component is a function that returns JSX)
+// function App() {
+//     return <input placeholder='hi there' />
+// }
+
+// // Show the component on the screen
+// root.render(<App />);
+
+
+
+
+
+
+// After creating App.js file
+
+// 1) Import the React and ReactDOM libraries
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+
+// 2) Get a reference to the div with ID root(i.e - root element which is present in index.html)
+const el = document.getElementById('root');
+
+// 3) Tell React to take control of the element
+const root = ReactDOM.createRoot(el);
+
+// Show the component on the screen
+root.render(<App />);
